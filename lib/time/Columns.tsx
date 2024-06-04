@@ -38,6 +38,7 @@ export function Columns({ options, getClasses, onSelect }: ColumnProps) {
             data-index={i}
             data-type={col.type}
             onClick={handleSelect}
+            onTouchStart={handleSelect}
           >
             {col.list.map((item, j) => (
               <li
